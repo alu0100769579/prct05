@@ -30,4 +30,8 @@ class NumFraccionarios
       NumFraccionarios.new(@numerador * other.numerador, @denominador * other.denominador)
   end
   
+  def / (other)
+      NumFraccionarios.new(@numerador * other.denominador, @denominador * other.numerador)
+  end
+  
 end
