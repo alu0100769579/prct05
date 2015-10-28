@@ -14,6 +14,7 @@ class TestNumNumFraccionariosarios < Test::Unit::TestCase
     assert_equal("(15,20)", (@unidad*5).to_s)
     assert_equal("(-3,-4)", (-@unidad).to_s)
     assert_equal("(29,28)", (@origen+@unidad).to_s)
+    assert_equal("(-13,28)", (@origen-@unidad).to_s)
 
   end
 

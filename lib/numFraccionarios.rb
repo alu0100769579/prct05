@@ -22,4 +22,8 @@ class NumFraccionarios
       NumFraccionarios.new(((@numerador * other.denominador) + (other.numerador * @denominador)), @denominador * other.denominador)
   end
   
+  def - (other)
+      NumFraccionarios.new(((@numerador * other.denominador) - (other.numerador * @denominador)), @denominador * other.denominador)
+  end
+  
 end
