@@ -1,6 +1,6 @@
 class NumFraccionarios
   
-  attr_reader :numeradorerador, :denominador
+  attr_reader :numerador, :denominador
   def initialize(numerador, denominador)
     @numerador, @denominador = numerador, denominador
   end
@@ -18,5 +18,8 @@ class NumFraccionarios
     NumFraccionarios.new(@numerador * -1, @denominador * -1)
   end
   
+  def + (other)
+      NumFraccionarios.new(((@numerador * other.denominador) + (other.numerador * @denominador)), @denominador * other.denominador)
+  end
   
 end
